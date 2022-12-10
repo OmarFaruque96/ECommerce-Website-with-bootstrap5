@@ -1,0 +1,28 @@
+/*global css section*/
+*,ul{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+/*varibale declare*/
+:root{
+	--black: #000;
+	--primaryColor: #ff3368;
+}
+
+/*header section css*/
+header{width: 100%;padding: 22px 0}
+.nav-item{margin:0 12px;position: relative;}
+.nav-link{color: var(--black);font-size: 15px;text-transform: capitalize;}
+.nav-icons a{margin-left: 22px;position: relative;}
+.nav-icons a i{color: var(--black) !important;}
+.cart-icon span{display: inline-block;width: 14px;height: 14px;border-radius: 100%;background: red;color: white;font-size: 10px;text-align: center;line-height: 14px;    position: absolute;top: 0;right: -10px;}
+.sub-menu{position: absolute;top: 54px;left: -33px;width: 140px;text-align: center;background: #ff3368;padding: 22px;border-radius: 4px;list-style: none;transform: scale(1,0);transition: 0.5s; transform-origin: top center;}
+.sub-menu li a{color: #fff !important;line-height: 2}
+.nav-item:hover .sub-menu{transform: scale(1);transition: 0.5s}
