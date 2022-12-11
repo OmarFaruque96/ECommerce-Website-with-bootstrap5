@@ -19,6 +19,19 @@ body{
 		width: 1140px !important
 	}
 }
+
+
+.owl-theme .owl-dots .owl-dot span {
+    width: auto !important;
+    height: auto !important;
+    margin: 0;
+    background: transparent !important;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 0px;
+    display: none;
+}
+.owl-theme .owl-dots .owl-dot.active span{display: inline-block !important;font-size: 100px;font-weight: 700;color: #cde8eb;position: absolute;right: -18%;top: 50%;transform: translateY(-50%);}
 /*varibale declare*/
 :root{
 	--black: #000;
@@ -33,7 +46,7 @@ header{width: 100%;padding: 22px 0;background-color: var(--bg-color)}
 .nav-icons a{margin-left: 22px;position: relative;}
 .nav-icons a i{color: var(--black) !important;}
 .cart-icon span{display: inline-block;width: 14px;height: 14px;border-radius: 100%;background: red;color: white;font-size: 10px;text-align: center;line-height: 14px;    position: absolute;top: 0;right: -10px;}
-.sub-menu{position: absolute;top: 54px;left: -33px;width: 140px;text-align: center;background: #ff3368;padding: 22px;border-radius: 4px;list-style: none;transform: scale(1,0);transition: 0.5s; transform-origin: top center;}
+.sub-menu{z-index:9999;position: absolute;top: 54px;left: -33px;width: 140px;text-align: center;background: #ff3368;padding: 22px;border-radius: 4px;list-style: none;transform: scale(1,0);transition: 0.5s; transform-origin: top center;}
 .sub-menu li a{color: #fff !important;line-height: 2}
 .nav-item:hover .sub-menu{transform: scale(1);transition: 0.5s}
 
@@ -46,7 +59,7 @@ header{width: 100%;padding: 22px 0;background-color: var(--bg-color)}
 .banner .owl-nav{display: flex;flex-direction: row-reverse;background-color: white;padding: 24px 64px;position: absolute;bottom: -120px;right: -200px;}
 .banner .owl-theme .owl-nav [class*=owl-]:hover{background-color: white; color: black}
 .banner .owl-next span{border-radius: 0;border-right: 2px solid black;padding-right: 12px;}
-.banner .owl-dots{display: none;}
+/*.banner .owl-dots{display: none;}*/
 
 
 /*featured section css*/
@@ -120,7 +133,7 @@ form input[type="email"]:focus{outline: none;}
 .c-logos .logos-wrapper div img:hover{filter: grayscale(0);transition: 0.5s}
 
 /*footer section css code*/
-footer{width: 100%;padding: 40px 0}
+footer{width: 100%;padding: 20px 0}
 footer .f-item h4{font-size: 20px;font-weight: 500;margin-bottom: 35px}
 footer .f-item ul li{list-style: none;}
 footer .f-item ul li a{font-size: 14px;color: #7f7f7f;margin-bottom: 10px;display: inline-block;}
@@ -129,7 +142,7 @@ footer .f-item form{position: relative;}
 footer .f-item form input[type="email"]{padding: 16px;width: 300px;border: none;border-radius: 5px;background-color: #f9f9fe}
 footer .f-item form input[type="submit"]{background: #ff3368;color: white;border: none;padding: 8px 16px;border-radius: 4px;position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
 
-footer .copyright{margin-top: 32px}
+footer .copyright{margin-top: 42px}
 footer .copyright p{font-size: 15px;color: #7f7f7f; font-weight: 300;line-height: 2;}
 footer .copyright .f-icon a{margin-left: 4px;padding: 5px 11px}
 footer .copyright .f-icon a i{font-size: 15px;color: #7f7f7f}

@@ -68,6 +68,18 @@ $(document).ready(function(){
 	$('.owl-prev span').text('Previous');
 
 
+	// slider counting number
+	var dots = document.querySelectorAll('.owl-dots button span');
+
+	for(let i=0; i<dots.length; i++){
+		let val = i+1;
+		if(i<10){
+			dots[i].innerText = "0"+val;
+		}
+		
+	}
+
+
   	const second = 1000,
         minute = second * 60,
         hour = minute * 60,
