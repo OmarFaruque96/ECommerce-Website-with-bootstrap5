@@ -66,8 +66,8 @@ header{width: 100%;padding: 22px 0;background-color: var(--bg-color)}
 .featured{width: 100%;padding: 120px 0}
 .featured .s-title h2{text-align: center;color: #1a1a1a;font-size: 36px;font-weight: 600;margin-bottom: 62px}
 .featured .f-item{background-color: #f8fbff;padding: 42px 12px 0 44px;position: relative;height: 400px;margin-bottom: 24px;}
-.featured .f-item h6{font-size: 15px;font-weight: 300;color: black; margin-bottom: 16px}
-.featured .f-item h3{font-size: 24px;font-weight: 600;color: black}
+.featured .f-item h6{position:relative;z-index: 9999;font-size: 15px;font-weight: 300;color: black; margin-bottom: 16px}
+.featured .f-item h3{position:relative;z-index: 9999;font-size: 24px;font-weight: 600;color: black}
 .featured .f-item a{z-index: 9999;color: #ff3368;font-weight: 700;position: absolute;bottom: 50px;text-transform: uppercase;letter-spacing: 2px;transition: 0.5s;opacity: 0}
 .featured .f-item:hover a{transform: translateY(10px);transition: 0.5s;opacity: 1}
 .featured .f-item img{position: absolute;bottom: 0;right: 20px;}

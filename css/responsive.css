@@ -1,0 +1,18 @@
+@media (max-width: 768px){
+	.c-logos .logos-wrapper{grid-template-columns: auto;}
+	.banner .owl-dots{display: none}
+	.banner .owl-nav{display: none}
+	.banner{padding-top: 60px}
+	.banner img{display: none !important;}
+	.banner .b-content h1{font-size: 50px}
+
+	.p-item{text-align: center;}
+	.p-item img{margin: auto;}
+	.awesome .owl-nav{right: 0}
+	.wsale .offer-content h2 {font-size: 32px;text-align: center;font-weight: 700;color: #1a1a1a;margin: 32px 0;line-height: 1.3}
+	.wsale .offer-content #countdown ul li {padding: 0 10px;text-align: center;}
+	.wsale .offer-content form input[type="email"],.subscription form input[type="email"] {width: 300px;margin-bottom: 16px;border-radius: 5px;}
+	.wsale .offer-content form input[type="submit"] {border-radius: 5px;}
+	.wsale .offer-content form{text-align: center;}
+	footer,.wsale .offer-content #countdown{text-align: center;}
+}
