@@ -87,5 +87,51 @@ header{width: 100%;padding: 22px 0;background-color: var(--bg-color)}
 .wsale .offer-content #countdown ul li:last-child{border-right: 0px}
 .wsale .offer-content form input[type="email"]{padding: 18px;width: 360px;border: none;border-radius: 5px 0px 0px 5px;}
 .wsale .offer-content form input[type="submit"]{width: 160px;background-color: #ff3368;display: inline-block;height: 60px;text-align: center;line-height: 60px;font-size: 15px;color: white;text-transform: uppercase;font-weight: 600;border-radius: 0 5px 5px 0px;background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 74%, #ffba00 100%);border: 0;margin-left: -4px;}
-.wsale .offer-content form input[type="email"]:focus{outline: none;}
+form input[type="email"]:focus{outline: none;}
 
+/*subscription section css*/
+.subscription{width: 100%;background-image: url('../img/subscribe.png');background-size: cover;background-position: center;background-repeat: no-repeat;padding: 120px 0;text-align: center;}
+.subscription h6{font-size: 14px;color: #ff3368;letter-spacing: 2px;font-weight: 400}
+.subscription h2{font-size: 48px;font-weight: 700;line-height: 60px;margin: 42px 0}
+.subscription form{}
+.subscription form input[type="email"]{padding: 18px;width: 360px;border: none;border-radius: 5px;}
+.subscription form input[type="submit"]{width: 160px;background-color: #ff3368;display: inline-block;height: 60px;text-align: center;line-height: 60px;font-size: 15px;color: white;text-transform: uppercase;font-weight: 600;border-radius: 5px;background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 74%, #ffba00 100%);border: 0;}
+
+
+/*client logos section css*/
+.c-logos{width: 100%;padding: 120px 0}
+.c-logos .logos-wrapper{display: grid;grid-template-columns: auto auto auto auto auto;}
+.c-logos .logos-wrapper div{border: 1px solid whitesmoke;text-align: center;padding: 20px;}
+.c-logos .logos-wrapper div:nth-child(1),
+.c-logos .logos-wrapper div:nth-child(2),
+.c-logos .logos-wrapper div:nth-child(3),
+.c-logos .logos-wrapper div:nth-child(4),
+.c-logos .logos-wrapper div:nth-child(5){border-top: none}
+.c-logos .logos-wrapper div:nth-child(6),
+.c-logos .logos-wrapper div:nth-child(7),
+.c-logos .logos-wrapper div:nth-child(8),
+.c-logos .logos-wrapper div:nth-child(9),
+.c-logos .logos-wrapper div:nth-child(10){border-bottom: none}
+.c-logos .logos-wrapper div:nth-child(1),
+.c-logos .logos-wrapper div:nth-child(6){border-left: none}
+.c-logos .logos-wrapper div:nth-child(5),
+.c-logos .logos-wrapper div:nth-child(10){border-right: none}
+.c-logos .logos-wrapper div img{filter: grayscale(1);transition: 0.5s}
+.c-logos .logos-wrapper div img:hover{filter: grayscale(0);transition: 0.5s}
+
+/*footer section css code*/
+footer{width: 100%;padding: 40px 0}
+footer .f-item h4{font-size: 20px;font-weight: 500;margin-bottom: 35px}
+footer .f-item ul li{list-style: none;}
+footer .f-item ul li a{font-size: 14px;color: #7f7f7f;margin-bottom: 10px;display: inline-block;}
+footer .f-item p{font-size: 15px;color: #7f7f7f; font-weight: 300;line-height: 2;margin-bottom: 32px}
+footer .f-item form{position: relative;}
+footer .f-item form input[type="email"]{padding: 16px;width: 300px;border: none;border-radius: 5px;background-color: #f9f9fe}
+footer .f-item form input[type="submit"]{background: #ff3368;color: white;border: none;padding: 8px 16px;border-radius: 4px;position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
+
+footer .copyright{margin-top: 32px}
+footer .copyright p{font-size: 15px;color: #7f7f7f; font-weight: 300;line-height: 2;}
+footer .copyright .f-icon a{margin-left: 4px;padding: 5px 11px}
+footer .copyright .f-icon a i{font-size: 15px;color: #7f7f7f}
+footer .copyright .f-icon a:hover{background-color: var(--primaryColor)}
+footer .copyright .f-icon a:hover i{color: white}
