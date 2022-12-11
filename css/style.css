@@ -1,7 +1,7 @@
 /*global css section*/
 *,ul{
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 }
 a{
 	text-decoration: none;
@@ -9,15 +9,25 @@ a{
 body{
 	font-family: 'Poppins', sans-serif;
 }
-
+.owl-carousel .owl-item img{
+	width: auto;
+	height: auto;
+	display: inherit;
+}
+@media(min-width: 1200px){
+	.container{
+		width: 1140px !important
+	}
+}
 /*varibale declare*/
 :root{
 	--black: #000;
 	--primaryColor: #ff3368;
+	--bg-color: #ecfdff;
 }
 
 /*header section css*/
-header{width: 100%;padding: 22px 0}
+header{width: 100%;padding: 22px 0;background-color: var(--bg-color)}
 .nav-item{margin:0 12px;position: relative;}
 .nav-link{color: var(--black);font-size: 15px;text-transform: capitalize;}
 .nav-icons a{margin-left: 22px;position: relative;}
@@ -26,3 +36,56 @@ header{width: 100%;padding: 22px 0}
 .sub-menu{position: absolute;top: 54px;left: -33px;width: 140px;text-align: center;background: #ff3368;padding: 22px;border-radius: 4px;list-style: none;transform: scale(1,0);transition: 0.5s; transform-origin: top center;}
 .sub-menu li a{color: #fff !important;line-height: 2}
 .nav-item:hover .sub-menu{transform: scale(1);transition: 0.5s}
+
+/*banner section css*/
+.banner{width: 100%;background-color: var(--bg-color);padding: 120px 0}
+.banner .b-content h1{font-size: 66px;font-weight: bold;color: #000;margin-bottom: 32px}
+.banner .b-content p{font-size: 15px;font-weight: 300;color: #000;margin-bottom: 46px;line-height: 1.8}
+.banner .b-content .theme-btn{width: 160px;background-color: #ff3368;display: inline-block;height: 60px;text-align: center;line-height: 60px;font-size: 15px;color: white;text-transform: uppercase;font-weight: 600;border-radius: 5px;background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 74%, #ffba00 100%);}
+.banner .b-content .theme-btn:hover{background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 54%, #ffba00 100%);}
+.banner .owl-nav{display: flex;flex-direction: row-reverse;background-color: white;padding: 24px 64px;position: absolute;bottom: -120px;right: -200px;}
+.banner .owl-theme .owl-nav [class*=owl-]:hover{background-color: white; color: black}
+.banner .owl-next span{border-radius: 0;border-right: 2px solid black;padding-right: 12px;}
+.banner .owl-dots{display: none;}
+
+
+/*featured section css*/
+.featured{width: 100%;padding: 120px 0}
+.featured .s-title h2{text-align: center;color: #1a1a1a;font-size: 36px;font-weight: 600;margin-bottom: 62px}
+.featured .f-item{background-color: #f8fbff;padding: 42px 12px 0 44px;position: relative;height: 400px;margin-bottom: 24px;}
+.featured .f-item h6{font-size: 15px;font-weight: 300;color: black; margin-bottom: 16px}
+.featured .f-item h3{font-size: 24px;font-weight: 600;color: black}
+.featured .f-item a{z-index: 9999;color: #ff3368;font-weight: 700;position: absolute;bottom: 50px;text-transform: uppercase;letter-spacing: 2px;transition: 0.5s;opacity: 0}
+.featured .f-item:hover a{transform: translateY(10px);transition: 0.5s;opacity: 1}
+.featured .f-item img{position: absolute;bottom: 0;right: 20px;}
+
+/*awesome section css*/
+.awesome{width: 100%;padding: 100px 0; position: relative;}
+.awesome .s-title{margin-bottom: 52px;}
+.awesome .s-title h2{font-weight: 700}
+.awesome .p-item .p-details{padding: 16px 0;transition: 0.5s}
+.awesome .p-item .p-details h4{font-size: 18px;font-weight: 700}
+.awesome .p-item .p-details p{font-size: 18px;font-weight: 300}
+.awesome .p-item .p-details a{opacity: 0;font-size: 18px;font-weight: 500;color: #ff3368;text-transform: uppercase;}
+.awesome .p-item .p-details a i{color: black;float: right;}
+.awesome .p-item:hover .p-details{margin: 0 24px;transition: 0.5s}
+.awesome .p-item:hover a{opacity: 1}
+.awesome .owl-dots{display: none;}
+.awesome .owl-next span{border-radius: 0;border-right: 2px solid black;padding-right: 12px;}
+.awesome .owl-nav{display: flex;flex-direction: row-reverse;background-color: white;padding: 0px;position: absolute;top: -70px;right: 9px;}
+.awesome .owl-theme .owl-nav [class*=owl-]:hover{background-color: white; color: black}
+
+
+/*weekly sale section css*/
+.wsale{width: 100%;padding: 100px 0;background-color: var(--bg-color)}
+.wsale .row{align-items: center;}
+.wsale .offer-content h2{font-size: 50px;font-weight: 700;color: #1a1a1a;line-height: 70px;}
+.wsale .offer-content #countdown{margin: 32px 0}
+.wsale .offer-content #countdown ul li{list-style: none;display: inline-block;text-transform: uppercase;font-size: 14px;color: #666;font-weight: 600;padding: 0 34px;border-right: 1px solid #d1d0d0;}
+.wsale .offer-content #countdown ul li span{font-size: 36px;color: black;font-weight: 700;display: block;}
+.wsale .offer-content #countdown ul li:first-child{padding-left: 0}
+.wsale .offer-content #countdown ul li:last-child{border-right: 0px}
+.wsale .offer-content form input[type="email"]{padding: 18px;width: 360px;border: none;border-radius: 5px 0px 0px 5px;}
+.wsale .offer-content form input[type="submit"]{width: 160px;background-color: #ff3368;display: inline-block;height: 60px;text-align: center;line-height: 60px;font-size: 15px;color: white;text-transform: uppercase;font-weight: 600;border-radius: 0 5px 5px 0px;background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 74%, #ffba00 100%);border: 0;margin-left: -4px;}
+.wsale .offer-content form input[type="email"]:focus{outline: none;}
+
