@@ -113,6 +113,14 @@ $(document).ready(function(){
      
         //seconds
       }, 0)
+
+
+ 	// add to cart 
+  //$(".shopping-cart").hide();
+  $("#cart").on("click", function(s) {
+  	s.preventDefault();
+    $(".shopping-cart").fadeToggle( "fast");
+  });
  
 
 });
