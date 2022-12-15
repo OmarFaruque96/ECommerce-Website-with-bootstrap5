@@ -124,6 +124,7 @@ $(document).ready(function(){
 
 
   let p_count = 0;
+  let total_price = 0;
 
   $('.aproducts #add_cart').click(function(e){
 
@@ -135,10 +136,20 @@ $(document).ready(function(){
   	$('.shopping-cart-items').append(item_selected);
 
   	p_count++;
-  	$('.shopping-cart-header .total').text(p_count);
+  	$('.nav-icons .totalp').text(p_count);
+
+  	total_price = total_price + parseInt(price);
+  	
+  	$('.total_price').text(total_price);
 
   });
 
 });
 
 
+// fixed topbar
+
+window.addEventListener('scroll',function(){
+	let header = document.querySelector('header');
+	header.classList.toggle('sticky',window.scrollY>100);
+});
