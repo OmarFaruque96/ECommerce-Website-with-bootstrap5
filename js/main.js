@@ -120,7 +120,25 @@ $(document).ready(function(){
   $("#cart").on("click", function(s) {
   	s.preventDefault();
     $(".shopping-cart").fadeToggle( "fast");
+  }); 
+
+
+  let p_count = 0;
+
+  $('.aproducts #add_cart').click(function(e){
+
+  	e.preventDefault();
+  	let p = $(this).parent();
+  	let price = p.children().children().html();
+
+  	let item_selected = '<li class="clearfix">'+p.parent().html()+'</li>';
+  	$('.shopping-cart-items').append(item_selected);
+
+  	p_count++;
+  	$('.shopping-cart-header .total').text(p_count);
+
   });
- 
 
 });
+
+

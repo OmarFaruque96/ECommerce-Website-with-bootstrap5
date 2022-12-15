@@ -235,3 +235,8 @@ header .shopping-cart-items{list-style: none;}
   font-size: 16px;
   margin: 25px 0 15px 0;
 }
+
+
+.shopping-cart-items img{width: 80px}
+.shopping-cart-items h4{font-size: 16px}
+.shopping-cart-items .p-details a{display: none;}
